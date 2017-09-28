@@ -1,2 +1,2 @@
 # enchepan
-Ceph
+Ceph. iSCSI using lrbd
