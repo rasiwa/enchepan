@@ -1,0 +1,40 @@
+{
+    "targets": [
+      {
+        "host": "hehehe",
+        "target": "iqn.2003-01.org.linux-iscsi.generic.x86:hehehe"
+      }
+    ],
+    "auth": [
+        {
+            "host": "hehehe", 
+            "authentication": "tpg", 
+            "tpg": {
+                "userid": "test", 
+                "password": "test1"
+            }
+        } 
+    ], 
+    "portals": [
+        {
+            "name": "portal1",
+            "addresses": ["1.2.3.4" ]
+        }
+    ],
+    "pools": [
+        {
+            "pool": "test-pool",
+            "gateways": [
+                {
+                    "host": "hehehe", 
+                    "tpg": [
+                        {
+                            "portal": "portal1",
+                            "image": "iscsi-test-2"
+                        }
+                    ]
+                } 
+            ] 
+        }
+    ]
+}
